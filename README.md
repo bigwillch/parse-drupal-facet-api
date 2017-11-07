@@ -47,3 +47,20 @@ axios.get('/api', {
     console.log(error);
   });
 ```
+
+If you need to pass multiple values as the same parameter you can do so by passing them as an array, e.g.
+
+```javascript
+  param1: 'value1',
+  param2: ['value2a', 'value2b', 'value2c'],
+  param3: 'value3'
+```
+
+This will output
+```javascript
+  'f[0]': 'param1:value1',
+  'f[1]': 'param2:value2a'
+  'f[2]': 'param2:value2b'
+  'f[3]': 'param2:value2c'
+  'f[4]': 'param3:value3'
+```

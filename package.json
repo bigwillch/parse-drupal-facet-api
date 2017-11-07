@@ -1,11 +1,15 @@
 {
   "name": "parse-drupal-facet-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper to parse an object of parameters so that it can be used to query a Drupal 7 facet api endpoint (by using in combination with axios for example)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Will Howlett <bigwillchnpm@gmail.com>",
-  "license": "ISC"
+  "license": "WTFPL",
+  "repository" :
+    { "type" : "git"
+    , "url" : "https://github.com/bigwillch/parse-drupal-facet-api"
+    }
 }
